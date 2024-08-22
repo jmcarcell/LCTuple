@@ -25,7 +25,7 @@ INCLUDE( ilcsoft_default_settings )
 
 
 FIND_PACKAGE( Marlin 1.0 REQUIRED ) # minimum required Marlin version
-FIND_PACKAGE( LCIO REQUIRED ) # minimum required Marlin version
+FIND_PACKAGE( LCIO REQUIRED )
 INCLUDE_DIRECTORIES( SYSTEM ${Marlin_INCLUDE_DIRS} )
 LINK_LIBRARIES( LCIO::lcio Marlin streamlog )
 ADD_DEFINITIONS( ${Marlin_DEFINITIONS} )
